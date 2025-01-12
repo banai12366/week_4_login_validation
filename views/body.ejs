@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slide Navbar</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="signup">
+        <form class="form" action="/verify" method="post">
+          <h2 style="color: red; margin-bottom: 2px;"> <%= msg || "" %> </h2>
+          <input type="email" name="email" placeholder="Email" required="" />
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Password"
+            required=""
+          />
+          <button>Login</button>
+        </form>
+      </div>
+
+      <div class="login"></div>
+    </div>
+  </body>
+</html>
